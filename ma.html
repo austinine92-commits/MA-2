@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MA — Apple-Style Design System</title>
+  <link rel="stylesheet" href="ma.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">MA<span class="logo-dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#spacing">Spacing</a></li>
+        <li><a href="#radius">Radius</a></li>
+        <li><a href="#effects">Effects</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#layout">Layout</a></li>
+        <li><a href="#principles">Principles</a></li>
+      </ul>
+      <span class="nav-badge">Design System</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Masterwork Automodules</span>
+      <h1>Design System<span class="dot">.</span></h1>
+      <p class="hero-sub">Light-mode first · Crimson red · SF Pro typography · 8pt grid</p>
+      <div class="hero-pills">
+        <span class="pill red">White-first surfaces</span>
+        <span class="pill">Zero decoration</span>
+        <span class="pill">Product-forward</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Colors -->
+    <section class="section" id="colors">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>Color Palette</h2>
+      </div>
+
+      <h3 class="group-label">Base</h3>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="swatch-color" style="background:#ffffff;border:1px solid #d1d1d6"></div><span class="swatch-token">background</span><span class="swatch-hex">#ffffff</span><span class="swatch-use">Page background</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#f5f5f7"></div><span class="swatch-token">surface</span><span class="swatch-hex">#f5f5f7</span><span class="swatch-use">Cards, sections</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#ebebeb"></div><span class="swatch-token">surface-2</span><span class="swatch-hex">#ebebeb</span><span class="swatch-use">Nested elements</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#d1d1d6"></div><span class="swatch-token">border</span><span class="swatch-hex">#d1d1d6</span><span class="swatch-use">Dividers</span></div>
+      </div>
+
+      <h3 class="group-label">Text</h3>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="swatch-color" style="background:#1d1d1f"></div><span class="swatch-token">text</span><span class="swatch-hex">#1d1d1f</span><span class="swatch-use">Primary body</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#6e6e73"></div><span class="swatch-token">text-secondary</span><span class="swatch-hex">#6e6e73</span><span class="swatch-use">Descriptions</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#aeaeb2"></div><span class="swatch-token">text-tertiary</span><span class="swatch-hex">#aeaeb2</span><span class="swatch-use">Placeholders</span></div>
+      </div>
+
+      <h3 class="group-label">Brand / Accent</h3>
+      <div class="brand-row">
+        <div class="brand-card primary-red">
+          <div class="brand-big">#c8102e</div>
+          <div class="brand-name">red</div>
+          <div class="brand-use">Primary CTA · Titles · Logo</div>
+        </div>
+        <div class="brand-card hover-red">
+          <div class="brand-big">#a50d25</div>
+          <div class="brand-name">red-hover</div>
+          <div class="brand-use">Button hover / pressed</div>
+        </div>
+        <div class="brand-card subtle-red">
+          <div class="brand-big" style="color:#c8102e">rgba(200,16,46,0.08)</div>
+          <div class="brand-name" style="color:#c8102e">red-subtle</div>
+          <div class="brand-use" style="color:#6e6e73">Badge backgrounds</div>
+        </div>
+      </div>
+
+      <h3 class="group-label">Semantic</h3>
+      <div class="semantic-row">
+        <div class="semantic-item"><div class="semantic-dot" style="background:#34c759"></div><span class="sem-name">success</span><span class="sem-hex">#34c759</span></div>
+        <div class="semantic-item"><div class="semantic-dot" style="background:#ff9f0a"></div><span class="sem-name">warning</span><span class="sem-hex">#ff9f0a</span></div>
+        <div class="semantic-item"><div class="semantic-dot" style="background:#ff3b30"></div><span class="sem-name">error</span><span class="sem-hex">#ff3b30</span></div>
+        <div class="semantic-item"><div class="semantic-dot" style="background:#007aff"></div><span class="sem-name">info</span><span class="sem-hex">#007aff</span></div>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section" id="typography">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>Typography</h2>
+      </div>
+
+      <div class="font-families">
+        <div class="font-family-card">
+          <div class="font-big" style="font-family:-apple-system,BlinkMacSystemFont,sans-serif">Aa</div>
+          <div class="font-family-info">
+            <span class="font-family-name">SF Pro / System UI</span>
+            <span class="font-family-role">UI · Display · Body</span>
+          </div>
+        </div>
+        <div class="font-family-card">
+          <div class="font-big" style="font-family:'SF Mono','Menlo',monospace">Aa</div>
+          <div class="font-family-info">
+            <span class="font-family-name">SF Mono / Menlo</span>
+            <span class="font-family-role">Code · Data · Values</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="type-scale">
+        <div class="type-row"><span class="type-meta">Display · 56px · 700</span><span class="type-sample" style="font-size:48px;font-weight:700;letter-spacing:-0.005em;line-height:1">Design</span></div>
+        <div class="type-row"><span class="type-meta">Title 1 · 40px · 700</span><span class="type-sample" style="font-size:36px;font-weight:700;letter-spacing:-0.003em">Product Showcase</span></div>
+        <div class="type-row"><span class="type-meta">Title 2 · 28px · 600</span><span class="type-sample" style="font-size:26px;font-weight:600">Color Palette</span></div>
+        <div class="type-row"><span class="type-meta">Title 3 · 20px · 600</span><span class="type-sample" style="font-size:20px;font-weight:600">Section Heading</span></div>
+        <div class="type-row"><span class="type-meta">Body · 17px · 400</span><span class="type-sample" style="font-size:17px;font-weight:400;color:#6e6e73">The quick brown fox jumps over the lazy dog.</span></div>
+        <div class="type-row"><span class="type-meta">Footnote · 13px · 400</span><span class="type-sample" style="font-size:13px;color:#aeaeb2">Labels, captions, metadata</span></div>
+        <div class="type-row"><span class="type-meta">Code · 13px · mono</span><span class="type-sample mono" style="font-size:13px;color:#c8102e">border-radius: 980px;</span></div>
+      </div>
+    </section>
+
+    <!-- Spacing -->
+    <section class="section" id="spacing">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>Spacing <span class="section-tag">8pt Grid</span></h2>
+      </div>
+      <div class="spacing-grid">
+        <div class="spacing-item"><div class="spacing-box" style="width:4px;height:4px"></div><span class="sp-token">space-1</span><span class="sp-val">4px</span><span class="sp-use">Micro gaps</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:8px;height:8px"></div><span class="sp-token">space-2</span><span class="sp-val">8px</span><span class="sp-use">Tight padding</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:12px;height:12px"></div><span class="sp-token">space-3</span><span class="sp-val">12px</span><span class="sp-use">Small components</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:16px;height:16px"></div><span class="sp-token">space-4</span><span class="sp-val">16px</span><span class="sp-use">Default gap</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:20px;height:20px"></div><span class="sp-token">space-5</span><span class="sp-val">20px</span><span class="sp-use">Card padding</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:24px;height:24px"></div><span class="sp-token">space-6</span><span class="sp-val">24px</span><span class="sp-use">Section sub</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:32px;height:32px"></div><span class="sp-token">space-8</span><span class="sp-val">32px</span><span class="sp-use">Between groups</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:40px;height:40px"></div><span class="sp-token">space-10</span><span class="sp-val">40px</span><span class="sp-use">Section spacing</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:48px;height:48px"></div><span class="sp-token">space-12</span><span class="sp-val">48px</span><span class="sp-use">Section breaks</span></div>
+        <div class="spacing-item"><div class="spacing-box" style="width:56px;height:56px"></div><span class="sp-token">space-16</span><span class="sp-val">64px</span><span class="sp-use">Hero spacing</span></div>
+      </div>
+    </section>
+
+    <!-- Border Radius -->
+    <section class="section" id="radius">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>Border Radius</h2>
+      </div>
+      <div class="radius-grid">
+        <div class="radius-item"><div class="radius-box" style="border-radius:4px"></div><span class="r-token">radius-xs</span><span class="r-val">4px</span><span class="r-use">Tags, chips</span></div>
+        <div class="radius-item"><div class="radius-box" style="border-radius:8px"></div><span class="r-token">radius-sm</span><span class="r-val">8px</span><span class="r-use">Buttons, inputs</span></div>
+        <div class="radius-item"><div class="radius-box" style="border-radius:12px"></div><span class="r-token">radius-md</span><span class="r-val">12px</span><span class="r-use">Cards</span></div>
+        <div class="radius-item"><div class="radius-box" style="border-radius:18px"></div><span class="r-token">radius-lg</span><span class="r-val">18px</span><span class="r-use">Large cards</span></div>
+        <div class="radius-item"><div class="radius-box" style="border-radius:24px"></div><span class="r-token">radius-xl</span><span class="r-val">24px</span><span class="r-use">Hero blocks</span></div>
+        <div class="radius-item"><div class="radius-box" style="border-radius:9999px"></div><span class="r-token">radius-full</span><span class="r-val">9999px</span><span class="r-use">Pills, avatars</span></div>
+      </div>
+    </section>
+
+    <!-- Effects -->
+    <section class="section" id="effects">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>Shadows & Effects</h2>
+      </div>
+      <div class="effects-grid">
+        <div class="effect-item">
+          <div class="effect-preview" style="box-shadow:0 1px 3px rgba(0,0,0,0.08)">shadow-sm</div>
+          <span class="ef-val">0 1px 3px rgba(0,0,0,0.08)</span>
+          <span class="ef-use">Cards at rest</span>
+        </div>
+        <div class="effect-item">
+          <div class="effect-preview" style="box-shadow:0 4px 16px rgba(0,0,0,0.10)">shadow-md</div>
+          <span class="ef-val">0 4px 16px rgba(0,0,0,0.10)</span>
+          <span class="ef-use">Lifted cards</span>
+        </div>
+        <div class="effect-item">
+          <div class="effect-preview" style="box-shadow:0 8px 32px rgba(0,0,0,0.12)">shadow-lg</div>
+          <span class="ef-val">0 8px 32px rgba(0,0,0,0.12)</span>
+          <span class="ef-use">Modals</span>
+        </div>
+        <div class="effect-item">
+          <div class="effect-preview red-shadow">shadow-red</div>
+          <span class="ef-val">0 4px 20px rgba(200,16,46,0.25)</span>
+          <span class="ef-use">Red CTA buttons</span>
+        </div>
+        <div class="effect-item frosted-item">
+          <div class="effect-preview frosted">Frosted Glass</div>
+          <span class="ef-val">blur(20px) saturate(180%)</span>
+          <span class="ef-use">Navigation bar</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section" id="components">
+      <div class="section-head">
+        <span class="section-num">06</span>
+        <h2>Components</h2>
+      </div>
+
+      <!-- Buttons -->
+      <h3 class="group-label">Buttons</h3>
+      <div class="comp-row">
+        <div class="comp-block">
+          <div class="comp-preview">
+            <button class="btn-primary">View Details</button>
+          </div>
+          <span class="comp-name">Primary Button</span>
+          <ul class="comp-specs">
+            <li>bg: <code>#c8102e</code></li>
+            <li>radius: <code>980px</code> pill</li>
+            <li>shadow-red on hover</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-preview">
+            <button class="btn-ghost">Learn More</button>
+          </div>
+          <span class="comp-name">Ghost Button</span>
+          <ul class="comp-specs">
+            <li>border: <code>rgba(200,16,46,0.3)</code></li>
+            <li>color: <code>#c8102e</code></li>
+            <li>hover fill subtle red</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-preview" style="background:#1d1d1f;border-radius:12px">
+            <button class="btn-nav">WEB360</button>
+          </div>
+          <span class="comp-name">Nav CTA</span>
+          <ul class="comp-specs">
+            <li>pill shape</li>
+            <li>white label</li>
+            <li>red bg on dark nav</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <h3 class="group-label">Cards</h3>
+      <div class="comp-row">
+        <div class="comp-block wide">
+          <div class="comp-preview" style="background:#f5f5f7;padding:20px">
+            <div class="demo-card">
+              <div class="demo-card-img">📦</div>
+              <div class="demo-card-body">
+                <span class="demo-card-title">Copilot CR2</span>
+                <span class="demo-card-sub">Coin Recycler Side Cart</span>
+                <button class="btn-primary" style="width:100%;margin-top:12px">View Details</button>
+              </div>
+            </div>
+          </div>
+          <span class="comp-name">Product Card</span>
+          <ul class="comp-specs">
+            <li>bg: <code>#f5f5f7</code></li>
+            <li>title: red <code>#c8102e</code></li>
+            <li>radius: <code>18px</code></li>
+          </ul>
+        </div>
+        <div class="comp-block wide">
+          <div class="comp-preview" style="background:#f5f5f7;padding:20px">
+            <div class="demo-card white-card">
+              <div class="demo-card-body" style="padding:0">
+                <span class="demo-card-eyebrow">Category</span>
+                <span class="demo-card-title" style="font-size:17px">Feature Heading</span>
+                <span class="demo-card-sub">Supporting description text goes here for context.</span>
+              </div>
+            </div>
+          </div>
+          <span class="comp-name">Content Card</span>
+          <ul class="comp-specs">
+            <li>bg: <code>#ffffff</code></li>
+            <li>border: <code>#d1d1d6</code></li>
+            <li>hover shadow-md</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Badges & Input -->
+      <h3 class="group-label">Badges & Input</h3>
+      <div class="comp-row">
+        <div class="comp-block">
+          <div class="comp-preview" style="gap:8px;flex-wrap:wrap">
+            <span class="demo-badge">AR / VR</span>
+            <span class="demo-badge">New</span>
+            <span class="demo-badge outline">Filter</span>
+          </div>
+          <span class="comp-name">Badge / Chip</span>
+          <ul class="comp-specs">
+            <li>radius: <code>4px</code></li>
+            <li>uppercase <code>0.06em</code></li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-preview" style="flex-direction:column;gap:10px">
+            <input class="demo-input" placeholder="Search products..." />
+            <input class="demo-input active" placeholder="Virtual Reality" />
+          </div>
+          <span class="comp-name">Input / Filter</span>
+          <ul class="comp-specs">
+            <li>active border: <code>#c8102e</code></li>
+            <li>radius: <code>8px</code></li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-preview" style="flex-direction:column;gap:8px;align-items:flex-start">
+            <span class="eyebrow-demo">Products</span>
+            <span style="font-size:20px;font-weight:700;color:#1d1d1f;letter-spacing:-0.002em">Our Solutions</span>
+            <span style="font-size:14px;color:#6e6e73">Designed for precision.</span>
+          </div>
+          <span class="comp-name">Section Title</span>
+          <ul class="comp-specs">
+            <li>label: red uppercase</li>
+            <li>title: <code>#1d1d1f</code> 40px</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layout -->
+    <section class="section" id="layout">
+      <div class="section-head">
+        <span class="section-num">07</span>
+        <h2>Layout</h2>
+      </div>
+      <div class="layout-diagram">
+        <div class="layout-frame">
+          <div class="layout-nav-bar">Nav · 52px · frosted glass</div>
+          <div class="layout-body">
+            <div class="layout-sidebar">Sidebar<br>280px</div>
+            <div class="layout-grid">
+              <div class="layout-card">Card</div>
+              <div class="layout-card">Card</div>
+              <div class="layout-card">Card</div>
+            </div>
+          </div>
+          <div class="layout-label-bottom">Max width: 1200px · padding: 0 48px</div>
+        </div>
+        <div class="layout-specs">
+          <div class="layout-spec"><span>Max Width</span><code>1200px</code></div>
+          <div class="layout-spec"><span>Page Padding</span><code>0 48px</code></div>
+          <div class="layout-spec"><span>Section Gap</span><code>96px</code></div>
+          <div class="layout-spec"><span>Card Gap</span><code>20px</code></div>
+          <div class="layout-spec"><span>Product Grid</span><code>repeat(3, 1fr)</code></div>
+          <div class="layout-spec"><span>Sidebar</span><code>280px</code></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="section" id="principles">
+      <div class="section-head">
+        <span class="section-num">08</span>
+        <h2>Design Principles</h2>
+      </div>
+      <div class="principles-grid">
+        <div class="principle"><span class="p-num">01</span><strong>White-first surfaces</strong><p>Primary backgrounds are always white or Apple's #f5f5f7. Color is reserved for accent and action only.</p></div>
+        <div class="principle"><span class="p-num">02</span><strong>Red as signal</strong><p>Crimson #c8102e is used exclusively for primary actions, titles, and brand marks. Never decorative.</p></div>
+        <div class="principle"><span class="p-num">03</span><strong>Breathing room</strong><p>Generous whitespace via the 8pt grid. Sections never feel cramped.</p></div>
+        <div class="principle"><span class="p-num">04</span><strong>Typography does the work</strong><p>Hierarchy is established through weight and size, not color or decoration.</p></div>
+        <div class="principle"><span class="p-num">05</span><strong>Subtle depth</strong><p>Shadows are light and natural. Cards feel tangible, not flat or floating.</p></div>
+        <div class="principle"><span class="p-num">06</span><strong>Product-forward</strong><p>Image areas are large and uncluttered on neutral gray. Products are always the hero.</p></div>
+        <div class="principle"><span class="p-num">07</span><strong>System fonts</strong><p>SF Pro / system-ui ensures native, fast rendering across all Apple and non-Apple devices.</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-logo">MA<span class="logo-dot">.</span></span>
+    <span>Apple-Style Design System · Masterwork Automodules palette</span>
+  </footer>
+
+</body>
+</html>
