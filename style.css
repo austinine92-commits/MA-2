@@ -1,0 +1,29 @@
+@font-face{font-family:'OR';font-weight:900;src:url('../../QNB Fonts/Oktah Round Font(English)/oktah_round_black-BF6407f0f559aad.otf')format('opentype')}
+@font-face{font-family:'OR';font-weight:700;src:url('../../QNB Fonts/Oktah Round Font(English)/oktah_round_bold-BF6407f0f645dd5.otf')format('opentype')}
+@font-face{font-family:'OR';font-weight:600;src:url('../../QNB Fonts/Oktah Round Font(English)/oktah_round_semibold-BF6407f0f68acb4.otf')format('opentype')}
+@font-face{font-family:'OR';font-weight:500;src:url('../../QNB Fonts/Oktah Round Font(English)/oktah_round_medium-BF6407f0f67e293.otf')format('opentype')}
+@font-face{font-family:'OR';font-weight:400;src:url('../../QNB Fonts/Oktah Round Font(English)/oktah_round_regular-BF6407f0f67a04a.otf')format('opentype')}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1920px;height:1080px;overflow:hidden;font-family:'OR','Helvetica Neue',Helvetica,Arial,sans-serif;background:#F5F3EE}
+.font-fallback{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif}
+.screen{width:1920px;height:1080px;position:relative;overflow:hidden}
+.header{position:absolute;top:0;left:0;right:0;height:160px;background:#fff;
+  border-bottom:2px solid #E2DDD6;display:flex;align-items:center;padding:0 72px;justify-content:space-between}
+.footer{position:absolute;bottom:0;left:0;right:0;height:160px;
+  border-top:2px solid #E2DDD6;display:flex;align-items:center;padding:0 120px;justify-content:space-between}
+.page-title{position:absolute;top:228px;left:120px;display:flex;align-items:center;gap:24px}
+.title-arrow{width:0;height:0;flex-shrink:0;border-top:28px solid transparent;border-bottom:28px solid transparent;border-left:24px solid #4B9CEB}
+.title-text{font-size:62px;font-weight:700;color:#1B1464;line-height:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:48px;height:96px;
+  font-family:'OR','Helvetica Neue',sans-serif;font-size:42px;font-weight:400;cursor:pointer;white-space:nowrap;border:none}
+.btn-primary{background:#1B1464;color:#fff}
+.btn-secondary{background:#fff;color:#1B1464;border:3px solid #1B1464}
+.btn-danger{background:#fff;color:#C0185A;border:3px solid #C0185A}
+.btn-brand{background:#003DA5;color:#fff}
+.btn-brand-outline{background:#fff;color:#003DA5;border:3px solid #003DA5}
+.btn-success-outline{background:#fff;color:#27AE60;border:3px solid #27AE60}
+.card-panel{background:#fff;border-radius:24px}
+.keyboard-key{background:#fff;border:2px solid #E2DDD6;border-radius:14px;font-family:'OR','Helvetica Neue',sans-serif;
+  font-weight:700;color:#1B1464;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.pill-btn{border-radius:50px;background:#fff;display:inline-flex;align-items:center;justify-content:center;
+  font-family:'OR','Helvetica Neue',sans-serif;font-weight:400;cursor:pointer}
